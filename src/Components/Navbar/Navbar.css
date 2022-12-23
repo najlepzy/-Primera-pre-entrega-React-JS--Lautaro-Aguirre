@@ -1,5 +1,43 @@
-.NavContainer {
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
+
+.Navbar {
+    background-color: #f1ca8f;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px #e6ba79;
+}
+.nav-items a{
+    margin: 15px;
+    color: #ffffff;
+    text-shadow: 1px 1px grey;
+    font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    opacity: 0.9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-items li{
+    list-style: none;
+}
+.nav-items a:hover{
+    color: #dd9a36;
+}
+
+.Brand {
+    position: fixed;
+    color: #dd9a36;
+    text-shadow: 1px 1px black;
+    margin:0 10rem;
+    padding-bottom:0.4rem;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo {
+    margin: 2rem;
+    height: 6rem;
+    width: 6rem;
+    align-items: center;
+    box-shadow: 2px 2px #e6ba79;
 }
