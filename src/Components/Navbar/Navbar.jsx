@@ -1,7 +1,7 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import "../CartWidget/CartWidget.css";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <>
       <div className="Navbar">
@@ -9,16 +9,17 @@ export const Navbar = () => {
         <h1 className="Brand">Accent</h1>
         <ul className="nav-items">
           <li>
-            <a href="/Celulares">Sofas</a>
-            <a href="/Tablets">Tablets</a>
+            <a href="/Inicio">Inicio</a>
+            <a href="/Sillones">Sillones</a>
+            <a href="/Sillas">Sillas</a>
             <a href="/Ver todo">Ver todo</a>
           </li>
         </ul>
-
         <CartWidget />
       </div>
     </>
   );
 };
 
+export default Navbar
 

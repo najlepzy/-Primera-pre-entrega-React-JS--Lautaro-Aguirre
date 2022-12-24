@@ -8,7 +8,8 @@
     box-shadow: 2px 2px #e6ba79;
 }
 .nav-items a{
-    margin: 15px;
+    margin: 2rem;
+    padding-left: 5rem;
     color: #ffffff;
     text-shadow: 1px 1px grey;
     font-size: 22px;
