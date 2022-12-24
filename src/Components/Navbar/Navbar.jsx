@@ -12,7 +12,7 @@ const Navbar = () => {
             <a href="/Inicio">Inicio</a>
             <a href="/Sillones">Sillones</a>
             <a href="/Sillas">Sillas</a>
-            <a href="/Ver todo">Ver todo</a>
+            <a href="/Categorias">Categorias</a>
           </li>
         </ul>
         <CartWidget />
