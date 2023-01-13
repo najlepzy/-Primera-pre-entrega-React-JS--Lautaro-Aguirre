@@ -1,4 +1,3 @@
-
 .Navbar {
     background-color: #f1ca8f;
     height: 6rem;
@@ -7,9 +6,10 @@
     align-items: center;
     box-shadow: 2px 2px #e6ba79;
 }
-.nav-items a{
+
+.nav-items a {
     margin: 1.4rem 0 0 6rem;
-    
+
     color: #ffffff;
     text-shadow: 1px 1px grey;
     font-size: 22px;
@@ -19,7 +19,8 @@
     opacity: 0.9;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav-items li{
+
+.nav-items li {
     list-style: none;
     margin: 2rem;
     padding: 1rem 0 2rem 24rem;
@@ -27,7 +28,7 @@
     text-align: center;
 }
 
-.nav-items a:hover{
+.nav-items a:hover {
     color: #dd9a36;
 }
 
@@ -35,11 +36,12 @@
     position: fixed;
     color: #dd9a36;
     text-shadow: 1px 1px black;
-    margin:0 10rem;
-    padding-bottom:0.4rem;
+    margin: 0 10rem;
+    padding-bottom: 0.4rem;
     font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .logo {
     margin: 2rem;
     height: 6rem;
