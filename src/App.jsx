@@ -9,7 +9,6 @@ import Categorias from "./Components/Dom/Categorias";
 import Sillas from "./Components/Dom/Sillas";
 import Sillones from "./Components/Dom/Sillones";
 import Inicio from "./Components/Dom/Inicio";
-import {FakeApi} from "./Components/FakeApi/FakeApi"
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <ItemListContainer greeting="Bienvenidos a Accent" />
-        <FakeApi/>
       </BrowserRouter>
     </>
   );
