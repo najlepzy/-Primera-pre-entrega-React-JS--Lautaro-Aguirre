@@ -3,16 +3,16 @@ import { getProducts } from "../../FakeApi";
 import { useEffect, useState } from "react";
 
 const ItemListContainer = ({ greeting }) => {
-  const [productos, setProductos] = useState([]);
+  const [Productos, setProductos] = useState([]);
   useEffect(() => {
     getProducts().then((res) => setProductos(res));
   }, []);
-  console.log(productos);
+  console.log(Productos);
   return (
     <div>
       <h1 className="ItemListContainer"> {greeting}</h1>
-      
-    </div>
+        <ItemList Productos={Productos} />
+      </div>
   );
 };
 

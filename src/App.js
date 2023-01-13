@@ -1,6 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import "./Components/Navbar/Navbar.css";
+import "./Components/Item/Item.css"
+import "./Components/ItemList/ItemList.css"
 import "./Components/ItemListContainer/ItemListContainer.css";
 import Navbar from "./Components/Navbar/Navbar";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
@@ -15,7 +17,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <ItemListContainer greeting="Bienvenidos a Accent" />
+        <ItemListContainer greeting="Bienvenidos a Accent"/>
       </BrowserRouter>
     </>
   );

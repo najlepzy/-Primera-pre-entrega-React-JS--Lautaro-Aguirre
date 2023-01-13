@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-const Item = ({ producto }) => {
-  const { id, img, name, description, price, stock, hashtags } = producto;
+const Item = ({ Prod }) => {
+  const { id, img, name, description, price, stock, hashtags } = Prod;
   const navegar = useNavigate();
   return (
-    <div className="card" style={{ width: "20rem", margin: ".5rem" }}>
+    <div className="card">
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body">
         <p className="card-text">{name}</p>
@@ -16,8 +16,6 @@ const Item = ({ producto }) => {
             {frase}
           </p>
         ))}
-        {/* safe navigation operator, en JS Optional chaining o encadenamiento opcional ,
-         les dejo el link de la docu: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optional_chaining */}
       </div>
 
       <button
