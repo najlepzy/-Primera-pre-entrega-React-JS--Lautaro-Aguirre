@@ -1,26 +1,22 @@
-const Productos = [
+const products = [
   {
-    id: "01",
-    name: "random1",
-    category: "nuevos",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Bibendum at varius vel pharetra vel turpis nunc. Pellentesque dignissim enim sit amet venenatis",
-    price: 75,
-    img: "https://picsum.photos/200",
+    id: "1",
+    name: "Evolution",
+    price: 85000,
+    category: "sillones",
+    img: "https://facyca.com.ar/uploads/imagenes/evolution_428310589.jpg",
+    stock: 25,
+    description: "Sillon con estructura metalica desarmable, asientos y respaldos de alta densidad, móviles, patas de metal cromadas o pintadas, tapiceria a elección, anti derrame, cabezal móvil, cierras YKK, resortes encapsulados, chaise longe, esquineros, arrimes",
+  },
+  {
+    id: "2",
+    name: "Rosellini",
+    price: 70000,
+    category: "sillones",
+    img: "https://facyca.com.ar/uploads/imagenes/rosellini_451395783.jpeg",
     stock: 5,
+    description: "Sillon confortable con estructura metalica, asientos y respaldos de alta densidad, patas de metal cromadas o pintadas, color, tapiceria a elección, cierres YKK, cabezal móvil y asientos extensibles",
   },
-  {
-    id: "02",
-    name: "random2",
-    category: "nuevos",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Bibendum at varius vel pharetra vel turpis nunc. Pellentesque dignissim enim sit amet venenatis",
-    price: 70,
-    img: "https://picsum.photos/201",
-    hashtags: ["#compraya", "#ultimoprod", "#random"],
-    stock: 15,
-  },
-  
 ];
 
 //imagenes:
@@ -29,15 +25,27 @@ const Productos = [
 //carpeta src:
 //img:require('../images/logo512.png')
 
-export const getProducts = () => {
-  let error = false;
+export const getProducts = (categoryId) => {
+  console.log(categoryId);
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (!error) {
-        resolve(Productos);
-      } else {
-        reject("Hubo un error intente mas tarde");
-      }
-    }, 2000);
+      resolve(products);
+    }, 500);
+  });
+};
+
+export const getProductsByCategory = (categoryId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.filter((prod) => prod.category === categoryId));
+    }, 500);
+  });
+};
+
+export const getProductById = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find((prod) => prod.id === id));
+    }, 500);
   });
 };

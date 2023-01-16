@@ -9,10 +9,10 @@ const Navbar = () => {
         <h1 className="Brand">Accent</h1>
         <ul className="nav-items">
           <li>
-            <a href="/Inicio">Inicio</a>
-            <a href="/Sillones">Sillones</a>
-            <a href="/Sillas">Sillas</a>
-            <a href="/Categorias">Categorias</a>
+            <a href="/Category/Inicio">Inicio</a>
+            <a href="/Category/Sillones">Sillones</a>
+            <a href="/Category/Sillas">Sillas</a>
+            <a href="/Category/Categorias">Categorias</a>
           </li>
         </ul>
         <CartWidget />
