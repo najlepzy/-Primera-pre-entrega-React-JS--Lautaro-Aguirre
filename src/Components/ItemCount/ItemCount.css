@@ -1,9 +1,7 @@
-.btn {
-    text-align: center;
+.counter {
+    width: fit-content;
+    background-color: white;
     margin: auto;
-    width: auto;
-}
-
-.btnedit {
-    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
